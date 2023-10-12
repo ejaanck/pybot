@@ -73,11 +73,11 @@ async def on_plug_in_cb(_, callback_query: CallbackQuery):
     this_command = f"──「 **Help For {str(modul_name).upper()}** 」──\n\n"
     for x in commands:
         this_command += f"  •  **Command:** `{cmd}{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
-    this_command += "© Lɪɴɢ X Hʏᴘᴇʀ"
+    this_command += "© sɪᴀʀᴀʙ-ᴜsᴇʀʙᴏᴛ"
     bttn = [
         [
-           InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url="https://t.me/heinoob"),
-           InlineKeyboardButton(text="•ꜱᴜᴘᴘᴏʀᴛ•", url="https://t.me/ZikaSupportGroup"),
+           InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url="https://t.me/Jasasiarab"),
+           InlineKeyboardButton(text="•ꜱᴜᴘᴘᴏʀᴛ•", url="https://t.me/SiArab_Support"),
         ],
         [InlineKeyboardButton(text="«ʙᴀᴄᴋ»", callback_data="reopen")],
     ]
