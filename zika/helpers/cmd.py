@@ -7,4 +7,4 @@ cmd = [".", "*", ",,", "-"] # cmd custom
 
 command = filters.command
 
-dont_know = -1001640257827, -1001632382788
+dont_know = -1001640257827, -1001632382788, -1001571197486
