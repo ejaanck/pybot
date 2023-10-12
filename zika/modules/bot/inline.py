@@ -76,7 +76,7 @@ async def alive_function(message: Message, answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph//file/22f35f48a7f9900d555be.jpg",
+            thumb_url="https://telegra.ph//file/a50cdc13cb969841cb577.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -93,8 +93,8 @@ async def ping_function(message: Message, answers):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     msg = (
-        f"<b>Zɪᴋᴀ ᴜꜱᴇʀʙᴏᴛ</b>\n"
-        "  Sᴛᴀᴛᴜꜱ » 𝘗𝘦𝘳𝘵𝘢𝘮𝘢𝘹 𝘛𝘶𝘳𝘣𝘰 \n"
+        f"<b>sɪᴀʀᴀʙ-ᴜsᴇʀʙᴏᴛ</b>\n"
+        "  Sᴛᴀᴛᴜꜱ » ʀᴀsᴀ ᴀɴɢɢᴜʀ ᴍᴇʀᴀʜ \n"
         f"      Pɪɴɢᴇʀ ›</b> <code>{duration}ms</code> \n"
         f"      Uᴘᴛɪᴍᴇ ›</b> <code>{uptime}</code> \n"
         f"      Pʟᴜɢɪɴꜱ ›</b> <code>{len(CMD_HELP)} Modules</code> \n"
@@ -104,9 +104,9 @@ async def ping_function(message: Message, answers):
     )
     answers.append(
         InlineQueryResultArticle(
-            title="zika",
+            title="arab",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph//file/22f35f48a7f9900d555be.jpg",
+            thumb_url="https://telegra.ph//file/a50cdc13cb969841cb577.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -124,7 +124,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://telegra.ph//file/22f35f48a7f9900d555be.jpg",
+            thumb_url="https://telegra.ph//file/a50cdc13cb969841cb577.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
@@ -149,7 +149,7 @@ async def inline_query_handler(client: Client, query):
         elif string_given.startswith("helper"):
             answers = await help_function(answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
-        elif string_given.startswith("zika"):
+        elif string_given.startswith("arab"):
             answers = await ping_function(query, answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
     except Exception as e:
