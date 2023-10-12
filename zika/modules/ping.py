@@ -100,7 +100,7 @@ async def nearest_dc(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("zping", ["."]) & filters.user(DEVS) & ~filters.me
+    filters.command("aping", ["."]) & filters.user(DEVS) & ~filters.me
 )
 @Client.on_message(filters.command("zping", cmd) & filters.me)
 async def pingme(client: Client, message: Message):
@@ -118,7 +118,7 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await zika.edit(
-        f"**ᴢɪᴋᴀ ᴜꜱᴇʀʙᴏᴛ**\n"
+        f"**sɪᴀʀᴀʙ-ᴜsᴇʀʙᴏᴛ**\n"
         f"** ➠  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ➠  Aᴋᴛɪꜰ  :** "
@@ -126,7 +126,7 @@ async def pingme(client: Client, message: Message):
         f"** ➠  Mᴀꜱᴛᴇʀ   :** {client.me.mention}" % (duration)
     )
 
-@Client.on_message(filters.command("zika", cmd) & filters.me)
+@Client.on_message(filters.command("arab", cmd) & filters.me)
 async def module_ping(client: Client, message: Message):
     cdm = message.command
     help_arg = ""
@@ -145,7 +145,7 @@ async def module_ping(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command("zping", ["."]) & filters.user(DEVS) & ~filters.me
+    filters.command("aping", ["."]) & filters.user(DEVS) & ~filters.me
 )
 @Client.on_message(filters.command("ping", cmd) & filters.me)
 async def kping(client: Client, message: Message):
@@ -154,7 +154,7 @@ async def kping(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"**ᴢɪᴋᴀ ᴜꜱᴇʀʙᴏᴛ** 🏓\n"
+        f"**sɪᴀʀᴀʙ-ᴜsᴇʀʙᴏᴛ** 🏓\n"
         f"**Pᴏɴɢ »** "
         f" `%sms` \n "
         f"**Aᴋᴛɪꜰ »** "
@@ -177,6 +177,6 @@ add_command_help(
     "ping",
     [
         ["ping", "Untuk Menunjukkan Ping Bot Anda."],
-        ["zping", "Untuk Menunjukkan Ping Bot Anda ( Beda animasi doang )."],
+        ["aping", "Untuk Menunjukkan Ping Bot Anda ( Beda animasi doang )."],
     ],
 )
