@@ -9,13 +9,13 @@ from zika.split.misc import create_botlog, git, heroku
 from zika.modules import ALL_MODULES
 
 MSG_ON = """
-✔️ **Zika Userbot Activated**
+✔️ **sɪᴀʀᴀʙ-ᴜsᴇʀʙᴏᴛ Activated**
 ╼┅━━━━━━━━━╍━━━━━━━━━┅╾
 🤖 **Userbot Version -** `{}`
 ⌨️ **Ketik** `{}alive` **untuk Mengecheck Bot**
 ╼┅━━━━━━━━━╍━━━━━━━━━┅╾
 """
-MSG_BOT = (f"**Zika Assistant**\nis alive...")
+MSG_BOT = (f"**sɪᴀʀᴀʙ Assistant**\nis alive...")
 
 
 async def main():
@@ -26,8 +26,8 @@ async def main():
         try:
             await bot.start()
             bot.me = await bot.get_me()
-            await bot.join_chat("storyQi")
-            await bot.join_chat("HyperSupportQ")
+            await bot.join_chat("Jasasiarab")
+            await bot.join_chat("SiArab_Support")
             ids.append(bot.me.id)
             try:
                 await bot.send_message(
@@ -41,7 +41,7 @@ async def main():
             )
         except Exception as a:
             LOGGER("master").warning(a)
-    LOGGER("✔️").info(f"ZikaRobot v{BOT_VER} [✨ UDAH AKTIF ✨]")
+    LOGGER("✔️").info(f"Arab-Userbot v{BOT_VER} [✨ UDAH AKTIF ✨]")
     if not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -49,7 +49,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("✔️").info("Starting ZikaRobot")
+    LOGGER("✔️").info("Starting ArabRobot")
     install()
     heroku()
     LOOP.run_until_complete(main())
