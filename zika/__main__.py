@@ -21,7 +21,7 @@ MSG_BOT = (f"**sɪᴀʀᴀʙ Assistant**\nis alive...")
 async def main():
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module(f"ling.modules.{all_module}")
+        importlib.import_module(f"zika.modules.{all_module}")
     for bot in bots:
         try:
             await bot.start()
