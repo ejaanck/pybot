@@ -35,7 +35,7 @@ async def alive(client: Client, message: Message):
     send = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
     man = (
-        f"──「 **[Zɪᴋᴀ Uꜱᴇʀʙᴏᴛ](https://github.com/Anon907/ZikaUserbot)** 」──\n\n"
+        f"──「 **[sɪᴀʀᴀʙ-ᴜsᴇʀʙᴏᴛ](https://t.me/SiArab_Support)** 」──\n\n"
         f"╼┅━━━━━━━━╍━━━━━━━━┅╾ \n"
         f"{emoji} <b>ʙᴏᴛ :</b> <code>{BOT_VER}</code> \n"
         f"{emoji} <b>ᴘʏᴛʜᴏɴ :</b> <code>{python_version()}</code> \n"
