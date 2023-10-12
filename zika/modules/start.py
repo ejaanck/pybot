@@ -27,7 +27,7 @@ async def repo(bot: Client, message: Message):
     await asyncio.sleep(1)
     await message.edit("Fetching Source Code.....")
     await asyncio.sleep(1)
-    await message.edit("Here is repo: \n\n\nhttps://github.com/Anon907/ZikaUserbot")
+    await message.edit("Minta ke @SiArab_Support kalo pen tau reponya")
 
 
 @Client.on_message(filters.command("repo", ".") & filters.me)
